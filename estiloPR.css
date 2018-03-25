@@ -1,0 +1,28 @@
+body{margin: 0px; background-color: #02010a; font-family: 'Dancing Script';}
+#contenido{width: 900px; padding: 0px 200px 0px 200px; animation: AnimacionPagina 1s;}
+
+#Cabecera{width: 100%; margin: 0 auto; padding: 2px 2px 2px 2px; background-color: #5b7989; border-radius: 10px 10px 0px 0px; color: white;}
+	#NombreSitio{text-align: left; text-shadow: 2px 2px 2px #02010a;}
+	#menu{text-align: right; color: white; text-decoration-line: none;}
+	#menu:hover{font-size: 150%;color: yellow; background-color: #8A1104; border: 1px solid #048A5E; border-radius: 5px;}
+
+#ImagenSecundaria{columns: 3; margin: 0 auto; padding: 1%; background-color: #d5c75f;}
+	img[id^='ImagenLC']{width: 90%;height: 30%; margin: 1% 5%; border: 1px solid black;}
+	
+		
+.PiePagina{border-radius: 0px 0px 10px 10px; background-color: #C6d5c5; display: flex; columns: 4; padding: 2% 2% 2% 2%;}
+	.PiePagina div{padding: 1%; text-align: center;}
+	.PiePagina p{background: #045B8A; color: #F1EB0F; border-radius: 5px;}
+	.icon-social{text-decoration-line: none; border: 1px solid green; border-radius: 3px;}
+
+@-webkit-keyframes AnimacionPagina{ 0%{margin-top: 150%;} 60%{margin-top: -5%;} 100%{margin-top: 0%;}}
+	
+@media (max-width: 900px){
+	#contenido{width: 100%; padding: 0px;}
+		#Cabecera{width: 100%; background-color: #5b7989; border-radius: 10px 10px 0 0; color: white;}
+		#NombreSitio{text-align: center; font-size: 150%;}
+		#menu{text-align: center; font-size: 120%;}
+		#ImagenSecundaria{display: flex; flex-direction: column; padding: 0% 0% 0% 0%; width: 100%;}
+		.PiePagina{flex-direction: column; padding: 0% 0% 0% 0%; width: 100%;}
+		.TextoTerminos{columns: 1; color: white; text-align: justify; margin: 0 auto; padding: 0% 2% 2% 2%;}
+}
